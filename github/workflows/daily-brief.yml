@@ -14,5 +14,5 @@ jobs:
       - run: pip install requests beautifulsoup4
       - name: Run lottery brief
         env:
-        GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: python scripts/lottery_brief.py
