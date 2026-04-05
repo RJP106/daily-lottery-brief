@@ -15,10 +15,6 @@ jobs:
       - name: Run lottery brief
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-        run: python scripts/lottery_brief.py
-- name: Run lottery brief
-        env:
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
           echo "Password length: ${#GMAIL_APP_PASSWORD}"
           python scripts/lottery_brief.py
